@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Recon241 Report</title>
+    <style>
+        body {
+            background: #050505;
+            color: #00ff88;
+            font-family: Consolas, monospace;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            background: linear-gradient(90deg, #001f1f, #003322);
+            padding: 30px;
+            text-align: center;
+            border-bottom: 2px solid #00ff88;
+        }
+
+        .header h1 {
+            font-size: 42px;
+            margin: 0;
+            text-shadow: 0 0 15px #00ff88;
+        }
+
+        .container {
+            padding: 30px;
+        }
+
+        .card {
+            background: #0d0d0d;
+            border: 1px solid #00ff88;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 25px;
+            box-shadow: 0 0 15px rgba(0, 255, 136, 0.2);
+        }
+
+        h2 {
+            color: #00e5ff;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            color: #d7fff0;
+        }
+
+        th, td {
+            border: 1px solid #144d3a;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background: #002b1d;
+            color: #00ff88;
+        }
+
+        .severity {
+            color: #ffcc00;
+            font-weight: bold;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <h1>Recon241</h1>
+    <p>Automated Reconnaissance Report</p>
+    <p>Author: Ev@</p>
+</div>
+
+<div class="container">
+
+    <div class="card">
+        <h2>Target Summary</h2>
+        <p><strong>Target:</strong> example.com</p>
+        <p><strong>Timestamp:</strong> 2026-05-17 03:53:48</p>
+        <p><strong>Status Code:</strong> 200</p>
+        <p><strong>Page Title:</strong> Example Domain</p>
+    </div>
+
+    <div class="card">
+        <h2>HTTP Headers</h2>
+        <table>
+            <tr>
+                <th>Header</th>
+                <th>Value</th>
+            </tr>
+            
+            <tr>
+                <td>Date</td>
+                <td>Sun, 17 May 2026 07:53:48 GMT</td>
+            </tr>
+            
+            <tr>
+                <td>Content-Type</td>
+                <td>text/html</td>
+            </tr>
+            
+            <tr>
+                <td>Transfer-Encoding</td>
+                <td>chunked</td>
+            </tr>
+            
+            <tr>
+                <td>Connection</td>
+                <td>keep-alive</td>
+            </tr>
+            
+            <tr>
+                <td>Server</td>
+                <td>cloudflare</td>
+            </tr>
+            
+            <tr>
+                <td>last-modified</td>
+                <td>Thu, 14 May 2026 20:05:43 GMT</td>
+            </tr>
+            
+            <tr>
+                <td>allow</td>
+                <td>GET, HEAD</td>
+            </tr>
+            
+            <tr>
+                <td>Age</td>
+                <td>13336</td>
+            </tr>
+            
+            <tr>
+                <td>cf-cache-status</td>
+                <td>HIT</td>
+            </tr>
+            
+            <tr>
+                <td>Content-Encoding</td>
+                <td>gzip</td>
+            </tr>
+            
+            <tr>
+                <td>CF-RAY</td>
+                <td>9fd10ced4a9d7709-DAC</td>
+            </tr>
+            
+        </table>
+    </div>
+
+    <div class="card">
+        <h2>Links Discovered</h2>
+        <table>
+            <tr>
+                <th>#</th>
+                <th>URL / Path</th>
+            </tr>
+            
+            <tr>
+                <td>1</td>
+                <td>https://iana.org/domains/example</td>
+            </tr>
+            
+        </table>
+    </div>
+
+    <div class="card">
+        <h2>Security Findings</h2>
+        <table>
+            <tr>
+                <th>#</th>
+                <th>Severity</th>
+                <th>Title</th>
+                <th>Description</th>
+            </tr>
+            
+            <tr>
+                <td>1</td>
+                <td class="severity">Medium</td>
+                <td>Missing Security Header: Content-Security-Policy</td>
+                <td>The target does not include the Content-Security-Policy header.</td>
+            </tr>
+            
+            <tr>
+                <td>2</td>
+                <td class="severity">Medium</td>
+                <td>Missing Security Header: X-Frame-Options</td>
+                <td>The target does not include the X-Frame-Options header.</td>
+            </tr>
+            
+            <tr>
+                <td>3</td>
+                <td class="severity">Medium</td>
+                <td>Missing Security Header: X-Content-Type-Options</td>
+                <td>The target does not include the X-Content-Type-Options header.</td>
+            </tr>
+            
+            <tr>
+                <td>4</td>
+                <td class="severity">Medium</td>
+                <td>Missing Security Header: Strict-Transport-Security</td>
+                <td>The target does not include the Strict-Transport-Security header.</td>
+            </tr>
+            
+        </table>
+    </div>
+
+</div>
+
+<div class="footer">
+    Generated by Recon241 | Ethical Cybersecurity Tool
+</div>
+
+</body>
+</html>
