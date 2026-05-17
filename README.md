@@ -35,3 +35,11 @@ Users must only scan systems, websites, networks, or applications that they own 
 
 By using Recon241, you agree to use it responsibly, legally, and ethically.
 
+
+## Full Disclaimer
+
+Please read the full disclaimer before using this tool:
+
+[Read Full Disclaimer](docs/DISCLAIMER.md)
+
+Recon241 must only be used for educational purposes, authorized penetration testing, and ethical cybersecurity research.
