@@ -1,0 +1,2 @@
+[console_scripts]
+recon241 = recon241.core.cli:main
