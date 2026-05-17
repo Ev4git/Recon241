@@ -2,21 +2,23 @@ from setuptools import setup, find_packages
 
 setup(
     name="recon241",
-    version="1.0.0",
-    author="Ev@",
-    description="Recon241 - Automated Reconnaissance and HTML Reporting Tool",
+    version="2.0.0",
     packages=find_packages(),
-    include_package_data=True,
     install_requires=[
-        "click>=8.1.0",
-        "rich>=13.0.0",
-        "requests>=2.28.0",
-        "beautifulsoup4>=4.11.0",
-        "jinja2>=3.1.0",
+        "requests",
+        "dnspython",
+        "python-whois",
+        "beautifulsoup4",
+        "lxml",
+        "aiohttp",
+        "rich",
+        "jinja2",
+        "weasyprint",
+        "python-dotenv",
     ],
     entry_points={
         "console_scripts": [
-            "recon241=recon241.core.cli:main",
+            "recon241=recon241.main:main",
         ],
     },
     python_requires=">=3.8",

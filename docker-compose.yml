@@ -1,0 +1,7 @@
+services:
+  recon241:
+    build: .
+    image: recon241:2.0
+    volumes:
+      - ./reports:/app/reports
+    command: ["-h"]
